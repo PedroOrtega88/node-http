@@ -1,8 +1,11 @@
 
 const webpageData = {
-    title: "Tu deporte de riesgo",
-    subtitle: "Bienvenido a Deportes de Riesgo",
-    description: "La mejor web de deportes de riesgo",
+    title: "Tus Deportes de  Riesgo",
+    subtitle: "Donde se encuentran los mejores deportes de riesgo",
+    description: "Si eres un amante de la adrenalina y te gustan los deportes de riesgo este es tu sitio.",
+    author: "Paco Pacheco",
+    year: 2024,
+    keywords: ["riesgo", "adrenalina", "HTML", "CSS", "JavaScript"],
   };
   
   module.exports = webpageData;

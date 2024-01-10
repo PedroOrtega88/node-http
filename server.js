@@ -3,7 +3,6 @@ const http = require('http');
 const webpageData = require('./data');
 
 const server = http.createServer((req, res) => {
-  // Configurar la respuesta del servidor con un documento HTML
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('<!DOCTYPE html>');
   res.write('<html lang="es">');
@@ -15,6 +14,8 @@ const server = http.createServer((req, res) => {
   res.write(`<h1>${webpageData.title}</h1>`);
   res.write(`<h2>${webpageData.subtitle}</h2>`);
   res.write(`<p>${webpageData.description}</p>`);
+  res.write(`<p>Autor: ${webpageData.author}</p>`);
+  res.write(`<p>Año: ${webpageData.year}</p>`);
   res.write('</body>');
   res.write('</html>');
   res.end();
