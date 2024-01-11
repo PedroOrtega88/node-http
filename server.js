@@ -1,7 +1,7 @@
-const http = require('http');
+const http = require('node:http');
 const webpageData = require('./data');
 
-let server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('<!DOCTYPE html>');
   res.write('<html lang="' + webpageData.language + '">');
